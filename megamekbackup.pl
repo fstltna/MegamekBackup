@@ -41,6 +41,6 @@ if (-f "$BACKUPDIR/megamekbackup-1.tgz")
 	rename("$BACKUPDIR/megamekbackup-1.tgz", "$BACKUPDIR/megamekbackup-2.tgz");
 }
 print "Done\nCreating Backup: ";
-system("$TARCMD $BACKUPDIR/megamekbackup-1.tgz $MEGAMEKDIR");
+system("$TARCMD $BACKUPDIR/megamekbackup-1.tgz $MEGAMEKDIR/*");
 print("Done!\n");
 exit 0;
