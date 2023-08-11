@@ -1,10 +1,10 @@
 #!/usr/bin/perl
 
 # Set these for your situation
-my $MEGAMEKDIR = "/root/megamek";
-my $BACKUPDIR = "/root/backups";
+my $MEGAMEKDIR = "/home/megamek/megamek";
+my $BACKUPDIR = "/home/megamek/MegamekBackup/backups";
 my $TARCMD = "/bin/tar czf";
-my $VERSION = "1.0";
+my $VERSION = "1.2";
 
 #-------------------
 # No changes below here...
