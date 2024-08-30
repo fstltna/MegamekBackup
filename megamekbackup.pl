@@ -2,9 +2,9 @@
 
 # Set these for your situation
 my $MEGAMEKDIR = "/home/megamek/megamek";
-my $BACKUPDIR = "/home/megamek/MegamekBackup/backups";
+my $BACKUPDIR = "/home/megamek/backups";
 my $TARCMD = "/bin/tar czf";
-my $VERSION = "1.2";
+my $VERSION = "1.3";
 
 #-------------------
 # No changes below here...
