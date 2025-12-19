@@ -4,7 +4,7 @@
 my $MEGAMEKDIR = "/home/megamek/megamek";
 my $BACKUPDIR = "/home/megamek/backups";
 my $TARCMD = "/bin/tar czf";
-my $VERSION = "1.3";
+my $VERSION = "1.4";
 
 #-------------------
 # No changes below here...
@@ -41,6 +41,6 @@ if (-f "$BACKUPDIR/megamekbackup-1.tgz")
 	rename("$BACKUPDIR/megamekbackup-1.tgz", "$BACKUPDIR/megamekbackup-2.tgz");
 }
 print "Done\nCreating Backup: ";
-system("$TARCMD $BACKUPDIR/megamekbackup-1.tgz $MEGAMEKDIR/*");
+system("$TARCMD $BACKUPDIR/megamekbackup-1.tgz $MEGAMEKDIR/* > /dev/null 2>&1");
 print("Done!\n");
 exit 0;
